@@ -1,30 +1,35 @@
 # Learning From Free-Text Human Feedback – Collect New Datasets Or Extend Existing Ones?
-To support research into methods for learning from free-text human feedback, feedback detection, or feedback annotation, we publish the EURTAD dataset. It consists of 1,155 dialogs from various domains. In order to maintain reusability, we provide the dialogs in a unified json format that extends the original annotations with error and user response type annotations. The following listing shows the dialog structure:
+This repository provides the code for our paper _Learning From Free-Text Human Feedback – Collect New Datasets Or Extend Existing Ones?_. It is an experimental software and is published for the sole purpose of giving additional background details on the publication. This is a cleaned-up and condensed version of what was used to conduct the experiments in the paper (please get in touch if you find errors).
 
-\begin{lstlisting}[linewidth=\columnwidth,breaklines=true,showstringspaces=false,language=Python]
-{
-    "unique_id": "unique id in the context of EURTAD, e.g., PMUL0121.json_multiwoz_train",
-    "id": "dataset-specific id, e.g., PMUL0121.json",
-    "turns": [
-        {
-            "utterance": {
-                "text": "text of the utterance",
-                "original_annotations": [
-                    ...
-                ],
-                "error_type": "the error type, e.g., E5",
-                "error_type_comment": "the annotators comment for why this is an error"
-            },
-            "response": {
-                "text": "text of the response",
-                "original_annotations": [
-                    ...
-                ],
-                "response_type": "The user response type, e.g., UR5"
-            }
-        },
-        ...
-    ]
+## Citation
+Please reference our work as follows:
+
+```
+@unpublished{        
+2023textualfeedback,        
+title={Learning From Textual User Feedback – Collect New Datasets Or Extend Existing Ones?},        
+author={Petrak, Dominic and Moosavi, Nafise Sadat and Tian, Ye and Rozanov, Nikolai and Gurevych, Iryna},        
+journal={OpenReview Preprint},        
+year={2023},        
+note={anonymous preprint under review}    
 }
+```
 
-\end{lstlisting}
+## Project Descriptions
+
+Learning from free-text human feedback is essential for dialog systems, but annotated data is scarce and usually covers only a small fraction of error types known in conversational AI. Instead of collecting and annotating new datasets from scratch, recent advances in synthetic dialog generation could be used to augment existing dialog datasets with the necessary annotations. However, to assess the feasibility of such an effort, it is important to know the types and frequency of free-text human feedback included in these datasets. 
+
+In this work, we investigate this question for a variety of commonly used dialog datasets, including MultiWoZ, SGD, BABI, PersonaChat, Wizards-of-Wikipedia, and the human-bot split of the Self-Feeding Chatbot. Using our observations, we derive new taxonomies for the annotation of free-text human feedback in dialogs and investigate the impact of including such data in response generation for three SOTA language generation models, including GPT-2, LLAMA, and Flan-T5. Our findings provide new insights into the composition of the datasets examined, including error types, user response types, and the relations between them
+
+## How To
+
+This repository consists of two sub-directories, __code__ and __data__. The first one contains all scripts related to our automatic filtering approach. The second one contains the annotated data. Please refer to the READMEs in both sub-directories for instructions.
+
+## Contact Persons
+
+Dominic Petrak (<petrak@ukp.informatik.tu-darmstadt.de>)
+  
+## Links
+
+[UKP Lab Homepage](https://www.ukp.tu-darmstadt.de/) | [TU Darmstadt Website](https://www.tu-darmstadt.de/index.en.jsp)
+

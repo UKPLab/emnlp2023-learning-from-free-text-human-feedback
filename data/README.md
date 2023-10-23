@@ -1,0 +1,3 @@
+This directory contains (1) the annotated data used for analysis (__analysis__) and (2) the preprocessed data used for conducting the experiments (__preprocessed__). 
+
+The number of preprocessed data is different from the number of data in analysis, since not all analyzed dialogs we usable in our experiments, i.e., some did not provide a target response, such as in the case of _Ignore and Continue_ free-text user feedback type. Besides, the preprocessed data is split into _erroneous/train_, _non\_erroneous/train_, _dev_, and _test_.
