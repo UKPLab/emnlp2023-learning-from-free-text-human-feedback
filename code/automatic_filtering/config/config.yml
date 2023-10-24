@@ -1,0 +1,33 @@
+model_name: all-mpnet-base-v2
+threshold: 0.50
+
+# 'sentence' -> pairing on sentence-level; 'chunk' -> pairing of chunks
+pairing: 'sentence'
+
+phrases: ../data/phrases.json
+sentences: ../data/sentences.json
+results: /home/python/Projects/results
+
+datasets: 
+  self_feeding:
+    train: /home/python/Projects/datasets/self_feeding
+  sgd: 
+    train: /home/python/Projects/datasets/sgd/train
+    valid: /home/python/Projects/datasets/sgd/valid
+    test: /home/python/Projects/datasets/sgd/test
+  personachat: 
+    train: /home/python/Projects/datasets/personachat/train
+    valid: /home/python/Projects/datasets/personachat/valid
+    test: /home/python/Projects/datasets/personachat/test
+  multiwoz: 
+    train: /home/python/Projects/datasets/MultiWOZ_2.2/train
+    valid: /home/python/Projects/datasets/MultiWOZ_2.2/valid
+    test: /home/python/Projects/datasets/MultiWOZ_2.2/test
+  wow:
+    train: /home/python/Projects/datasets/wow/train
+    valid: /home/python/Projects/datasets/wow/valid
+    test: /home/python/Projects/datasets/wow/test
+  babi:
+    train: /home/python/Projects/datasets/babi/train
+    valid: /home/python/Projects/datasets/babi/valid
+    test: /home/python/Projects/datasets/babi/test
