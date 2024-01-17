@@ -5,13 +5,17 @@ This repository provides the code for our paper _Learning From Free-Text Human F
 Please reference our work as follows:
 
 ```
-@unpublished{        
-2023textualfeedback,        
-title={Learning From Textual User Feedback – Collect New Datasets Or Extend Existing Ones?},        
-author={Petrak, Dominic and Moosavi, Nafise Sadat and Tian, Ye and Rozanov, Nikolai and Gurevych, Iryna},        
-journal={OpenReview Preprint},        
-year={2023},        
-note={anonymous preprint under review}    
+@inproceedings{petrak-etal-2023-learning,
+    title = "Learning From Free-Text Human Feedback {--} Collect New Datasets Or Extend Existing Ones?",
+    author = "Petrak, Dominic and Moosavi, Nafise and Tian, Ye and Rozanov, Nikolai and Gurevych, Iryna",
+    booktitle = "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
+    month = dec,
+    year = "2023",
+    address = "Singapore",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.emnlp-main.1011",
+    doi = "10.18653/v1/2023.emnlp-main.1011",
+    pages = "16259--16279",    
 }
 ```
 
