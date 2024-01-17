@@ -2,7 +2,7 @@
 This repository provides the code for our paper _Learning From Free-Text Human Feedback – Collect New Datasets Or Extend Existing Ones?_. It is an experimental software and is published for the sole purpose of giving additional background details on the publication. This is a cleaned-up and condensed version of what was used to conduct the experiments in the paper (please get in touch if you find errors).
 
 ## Citation
-Please reference our work as follows:
+Please reference our work as follows (or copy bibtex from [ACL Anthology](https://aclanthology.org/2023.emnlp-main.1011/):
 
 ```
 @inproceedings{petrak-etal-2023-learning,
